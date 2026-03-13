@@ -1,0 +1,162 @@
+body{
+background:linear-gradient(to bottom,#f7f7f7,#ececec);
+font-family: sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+
+.menu{
+max-height:0;
+overflow:hidden;
+transition:0.3s;
+}
+
+#menu-toggle:checked ~ .menu{
+max-height:300px;
+}
+
+
+.orbit-container{
+position:relative;
+
+width:clamp(260px,40vw,500px);
+height:clamp(260px,40vw,500px);
+
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+
+
+.center-item{
+height:clamp(280px,12vw,280px);
+z-index:2;
+}
+
+
+.orbit{
+position:absolute;
+
+width:clamp(70px,10vw,140px);
+height:clamp(70px,10vw,140px);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+animation:orbit 12s linear infinite;
+}
+
+.orbit img{
+max-width:100%;
+max-height:100%;
+object-fit:contain;
+}
+
+.orbit1{animation-delay:0s;}
+.orbit2{animation-delay:3s;}
+.orbit3{animation-delay:6s;}
+.orbit4{animation-delay:9s;}
+
+
+@keyframes orbit{
+
+0%{
+transform:rotate(0deg) translateX(210px) rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg) translateX(210px) rotate(-360deg);
+}
+
+}
+
+.orbit-container::before{
+
+content:"";
+
+position:absolute;
+
+width:420px;
+height:420px;
+
+border-radius:50%;
+
+border:2px solid rgba(255,200,150,0.3);
+
+box-shadow:
+0 0 40px rgba(255,200,150,0.3),
+0 0 80px rgba(255,200,150,0.2);
+
+}
+
+@media (max-width:768px){
+
+
+.orbit-container{
+width:260px;
+height:260px;
+margin:auto;
+}
+
+
+.orbit-container::before{
+width:260px;
+height:260px;
+}
+.center-item{
+width:150px;
+height:auto;
+}
+
+.orbit{
+width:80px;
+height:80px;
+}
+
+@keyframes orbit{
+0%{
+transform: rotate(0deg) translateX(115px) rotate(0deg);
+}
+
+100%{
+transform: rotate(360deg) translateX(115px) rotate(-360deg);
+}
+}
+
+}
+
+.insta-wrapper{
+overflow:hidden;
+width:100%;
+}
+
+.insta-track{
+display:flex;
+gap:12px;
+width:max-content;
+animation: scrollInsta 25s linear infinite;
+}
+
+.insta-track img{
+height:140px;
+width:140px;
+object-fit:cover;
+border-radius:8px;
+flex-shrink:0;
+}
+
+@keyframes scrollInsta{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}

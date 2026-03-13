@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UrbanMode</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+
+
+
+<!-- MENU TOGGLE -->
+<input type="checkbox" id="menu-toggle" hidden>
+
+<header class="flex justify-between items-center px-8 py-4 border-b bg-white">
+
+<!-- LOGO -->
+<h1 class="text-xl font-semibold">UrbanMode</h1>
+
+<!--ICONS -->
+<div class="flex items-center gap-6 text-lg">
+
+<i class="fa-regular fa-user cursor-pointer"></i>
+<i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+<i class="fa-regular fa-heart cursor-pointer"></i>
+
+
+<label for="menu-toggle" class="cursor-pointer text-xl">
+<i class="fa-solid fa-bars"></i>
+</label>
+
+</div>
+
+</header>
+
+
+<!-- DROPDOWN MENU -->
+<div class="menu bg-white shadow-md">
+
+<nav class="flex flex-col p-6 gap-4 text-gray-700">
+
+<a href="#" class="hover:text-orange-600">Home</a>
+<a href="#New Arrivals"class="hover:text-orange-600">New Arrivals</a>
+<a href="#Trending"class="hover:text-orange-600">Trending</a>
+<a href="#Sale"class="hover:text-orange-600">Sale</a>
+
+</nav>
+
+</div>
+
+<!-- HERO SECTION -->
+
+<section class="max-w-7xl mx-auto grid md:grid-cols-2 grid-cols-1 items-center pt-16 pb-6 gap-5 px-10">
+
+<!-- LEFT TEXT -->
+<div class="flex flex-col justify-center gap-2 md:gap-4 max-w-md"data-aos="fade-up">
+
+<p class="text-sm md:text-small tracking-widest text-gray-500 hover:text-red-400">
+NEW SEASON ARRIVALS
+</p>
+
+<h1 class="text-3xl md:text-5xl font-bold leading-tight">
+Elevate Your Style
+</h1>
+
+<p class="text-gray-500">
+Discover our latest collection
+</p>
+
+<button class="bg-black text-white px-4 py-2 text-sm md:text-base rounded-md w-fit hover:bg-orange-500">
+SHOP NOW
+</button>
+
+</div>
+
+
+<!-- ORBIT PRODUCTS -->
+<div class="flex justify-center items-center py-6"data-aos="fade-up">
+
+<div class="orbit-container">
+
+<img src="./images/bag.png" class="center-item">
+
+<div class="orbit orbit1">
+<img src="./images/watch.png">
+</div>
+
+<div class="orbit orbit2">
+<img src="./images/glass.png">
+</div>
+
+<div class="orbit orbit3">
+<img src="./images/shoe.png">
+</div>
+
+<div class="orbit orbit4">
+<img src="./images/jacket.png">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TRENDING CATEGORIES -->
+
+<section id="Trending" class="max-w-7xl mx-auto py-16">
+
+<h2 class="text-2xl md:text-3xl text-center font-semibold mb-10">
+Trending Categories
+</h2>
+
+<div class="grid grid-cols-2 md:grid-cols-4  gap-6 md:gap-8 shadow-lg"data-aos="fade-left">
+
+<div class="bg-white p-4 rounded shadow text-center max-h-[300px]"data-aos="fade-down">
+<img src="./images/men s wear.png" class="mx-auto h-50 transition-transform duration-300 hover:scale-110 active:scale-110">
+<p class="mt-4">Men</p>
+</div>
+
+<div class="bg-white p-4 rounded shadow text-center max-h-[300px]"data-aos="fade-down">
+<img src="./images/women s wear.png" class="mx-auto h-50 py-1 transition-transform duration-300 hover:scale-110 active:scale-110">
+<p class="mt-4">Women</p>
+</div>
+
+<div class="bg-white p-4 rounded shadow text-center max-h-[300px] py-19"data-aos="fade-down">
+<img src="./images/accessories.png" class="mx-auto h-35 transition-transform duration-300 hover:scale-110 active:scale-110">
+<p class="mt-4">Accessories</p>
+</div>
+
+<div class="bg-white p-4 rounded shadow text-center max-h-[300px] py-24"data-aos="fade-down">
+<img src="./images/footwear.png" class="mx-auto h-30 transition-transform duration-300 hover:scale-110 active:scale-110">
+<p class="mt-4">Footwear</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FEATURED PRODUCTS -->
+
+<section id="Sale" class="max-w-7xl mx-auto py-16">
+
+<h2 class="text-2xl md:text-3xl text-center font-semibold mb-8">
+Featured Collection
+</h2>
+
+<div class="grid grid-cols-2  md:grid-cols-4 gap-6 md:gap-8"data-aos="fade-right">
+
+<!-- CARD 1 -->
+<div class="relative bg-white p-4 rounded shadow text-center hover:-translate-y-3 active:shadow-lg active:-translate-y-2">
+
+<span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+Trending
+</span>
+
+<img src="./images/jacket.jpg" class="mx-auto h-40 object-contain">
+
+<h3 class="mt-4">Field Jacket</h3>
+
+<button class="text-sm px-3 py-2 rounded-full bg-orange-300 mx-auto block mt-2 hover:bg-red-500 active:bg-red-500">
+Shop Now
+</button>
+
+</div>
+
+<!-- CARD 2 -->
+<div class="bg-white p-4 rounded shadow text-center hover:-translate-y-3 active:shadow-lg active:-translate-y-2"data-aos="fade-down">
+
+<img src="./images/elegant dress2.jpg" class="mx-auto h-40 object-contain">
+
+<h3 class="mt-4">Elegant Dress</h3>
+
+<button class="text-sm px-3 py-2 rounded-full bg-orange-300 mx-auto block mt-2 hover:bg-red-500 active:bg-red-500">
+Shop Now
+</button>
+
+</div>
+
+<!-- CARD 3 -->
+<div class="relative bg-white p-4 rounded shadow text-center hover:-translate-y-3 active:shadow-lg active:-translate-y-2"data-aos="fade-down">
+    <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+30% OFF
+</span>
+    
+
+<img src="./images/denims.jpg" class="mx-auto h-40 object-contain">
+
+<h3 class="mt-4">Denim Shirt</h3>
+
+<button class="text-sm px-3 py-2 rounded-full bg-orange-300 mx-auto block mt-2 hover:bg-red-500 active:bg-red-500">
+Shop Now
+</button>
+
+</div>
+
+<!-- CARD 4 -->
+<div class="bg-white p-4 rounded shadow text-center hover:-translate-y-3 active:shadow-lg active:-translate-y-2"data-aos="fade-down">
+
+<img src="./images/crossbodybag2.jpg" class="mx-auto h-40 object-contain">
+
+<h3 class="mt-4">Crossbody Bag</h3>
+
+<button class="text-sm px-3 py-2 rounded-full bg-orange-300 mx-auto block mt-2 hover:bg-red-500 active:bg-red-500">
+Shop Now
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- BANNER -->
+
+<section class="max-w-7xl mx-auto py-10">
+
+<div class="relative">
+
+<img src="./images/fall.jpeg" class="rounded-lg w-full h-[260px] md:h-[350px]   object-cover">
+
+<div class="absolute top-6 left-6 md:top-12 md:left-12 max-w-[65%] text-white">
+
+<h2 class="text-2xl md:text-4xl md:mb-4 font-semibold mb-2 me-30">
+Fall Essentials
+</h2>
+
+<p class="text-sm md:text-base mb-3 md:mb-4">
+Discover timeless pieces
+</p>
+
+<button class="bg-black md:rounded px-4 py-2 hover:bg-orange-500 md:py-3 md:px-6  text-sm md:text-base">
+Explore Collection
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="max-w-6xl mx-auto py-20 text-center bg-stone-300">
+
+<h2 class="md:text-4xl text-2xl font-semibold mb-10">
+The Ultimate <br> COLLECTIONS
+</h2>
+
+<div class="flex justify-center items-end gap-4 overflow-x-auto md:overflow-visible px-4"data-aos="fade-up">
+
+<img src="./images/style1.jpg" class="w-40 rotate-[-8deg] rounded-lg shadow-lg hover:rotate-0 transition duration-300 shrink-0 active:-translate-y-9"data-aos="fade-up">
+<img src="./images/style2.jpg" class="w-44 rotate-[-4deg] rounded-lg shadow-lg hover:rotate-0 transition duration-300 shrink-0 active:-translate-y-9"data-aos="fade-up">
+<img src="./images/style3.jpg" class="w-48 rounded-lg shadow-xl">
+<img src="./images/style4.jpg" class="w-44 rotate-[4deg] rounded-lg shadow-lg hover:rotate-0 transition duration-300 shrink-0 active:-translate-y-9"data-aos="fade-up">
+<img src="./images/style5.jpg" class="w-40 rotate-[8deg] rounded-lg shadow-lg hover:rotate-0 transition duration-300 shrink-0 active:-translate-y-9"data-aos="fade-up">
+
+</div>
+
+<p class="mt-8 text-gray-500 hover:text-red-400">
+Timeless Pieces. Modern Style.
+</p>
+
+<button class="mt-4 bg-black text-white px-6 py-3 rounded hover:bg-orange-500">
+Explore More
+</button>
+
+</section>
+<hr>
+<section class="max-w-7xl mx-auto py-15">
+
+<h2 class="text-3xl font-semibold text-center mb-12">
+Style Lookbook
+</h2>
+
+<div class="relative rounded-xl overflow-hidden">
+
+<img src="https://i.pinimg.com/736x/55/7e/18/557e18b67a5fb3ff833ff9a833b2e9bb.jpg"
+class="w-full md:h-[420px] h-[260px]  object-cover">
+
+<div class="absolute nd:bottom-10 md:left-10 bottom-6 left-6 text-white">
+
+<h3 class="md:text-3xl text-xl  font-semibold mb-2">
+Modern Autumn Layers
+</h3>
+
+<p class="mb-4">
+Inspired by clean urban fashion.
+</p>
+
+<button class="bg-black md:px-6 md:py-3 px-2 py-2 md:rounded rounded-md bg-orange-300 hover:bg-red-500">
+Explore the Look
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="New Arrivals"    class="max-w-7xl mx-auto py-24 bg-stone-300">
+
+<h2 class="text-3xl font-semibold text-center mb-12">
+New Arrivals
+</h2>
+
+<div class="grid md:grid-cols-4  md:gap-8   grid-cols-2 gap-4"data-aos="fade-down">
+
+<!-- Product 1 -->
+<div class="group text-center"data-aos="fade-up">
+
+<img src="https://i.pinimg.com/736x/00/31/3a/00313a989f0640dd02620767252fd96c.jpg"
+class="rounded-lg md:h-72 h-44 w-full object-cover transition duration-300 group-hover:scale-105"data-aos="fade-up">
+
+<h3 class="mt-4 font-medium">Autumn Jacket</h3>
+
+
+</div>
+
+<!-- Product 2 -->
+<div class="group text-center"data-aos="fade-up">
+
+<img src="https://i.pinimg.com/736x/49/02/a2/4902a2ec8e25e3ebfd9ab4b26d3d5fca.jpg"
+class="rounded-lg md:h-72 h-44 w-full object-cover transition duration-300 group-hover:scale-105"data-aos="fade-down">
+
+<h3 class="mt-4 font-medium">Minimal Dress</h3>
+
+
+</div>
+
+<!-- Product 3 -->
+<div class="group text-center"data-aos="fade-up">
+
+<img src="https://i.pinimg.com/1200x/d0/d1/f2/d0d1f2efaa1a1cd4765f65c362a1bb2d.jpg"
+class="rounded-lg md:h-72 h-44 w-full object-cover transition duration-300 group-hover:scale-105"data-aos="fade-up">
+
+<h3 class="mt-4 font-medium">mini skirt</h3>
+
+
+</div>
+
+<!-- Product 4 -->
+<div class="group text-center"data-aos="fade-up">
+
+<img src="https://i.pinimg.com/1200x/de/2e/4f/de2e4f0b1a0a01bffde1fd82138d81dd.jpg"
+class="rounded-lg md:h-72 h-44 w-full object-cover transition duration-300 group-hover:scale-105"data-aos="fade-down">
+
+<h3 class="mt-4 font-medium">Leather Bag</h3>
+
+
+</div>
+
+</div>
+
+</section>
+
+<section class="max-w-7xl mx-auto py-20 px-6 text-center">
+
+<h2 class="text-2xl md:text-3xl font-semibold mb-10">
+Shop the Look
+</h2>
+
+<div class="grid md:grid-cols-2 gap-8 items-center">
+
+<img src="https://i.pinimg.com/1200x/3a/3a/ab/3a3aab4a9fd9aa62d6683f557eb27f15.jpg"
+class="w-full md:h-[450px] h-[350px]   object-cover rounded-lg">
+
+<div class="space-y-6 text-left">
+
+<div class="flex justify-between border-b pb-2">
+<span>Urban Jacket</span>
+<span class="md:text-red-600 text-red-600">$120</span>
+</div>
+
+<div class="flex justify-between border-b pb-2">
+<span>Classic Sneakers</span>
+<span class="md:text-red-600 text-red-600">$90</span>
+</div>
+
+<div class="flex justify-between border-b pb-2">
+<span>sling Bag</span>
+<span class="md:text-red-600 text-red-600">$60</span>
+</div>
+
+<button class="bg-black text-white px-6 py-3 rounded md:hover:bg-orange-500 active:bg-orange-500">
+Shop the Look
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="bg-stone-100 py-20 text-center">
+
+<h2 class="md:text-3xl text-2xl font-semibold mb-4">
+Join UrbanMode
+</h2>
+
+<p class="text-gray-600 mb-6">
+Get 10% off your first order
+</p>
+
+<div class="flex flex-col md:flex-row justify-center items-center gap-3 mt-4"data-aos="flip-right">
+
+<input 
+type="email" 
+placeholder="Enter your email"
+class="border px-4 py-2 rounded w-64">
+
+<button class="bg-black text-white px-6 py-2 rounded">
+Subscribe
+</button>
+
+</div>
+
+</section>
+
+<section class="py-16 bg-stone-100 text-center">
+
+<h2 class="text-2xl md:text-3xl font-semibold mb-8">
+Follow Us on Instagram
+</h2>
+
+<div class="insta-wrapper">
+
+<div class="insta-track">
+
+<img src="https://i.pinimg.com/736x/74/0b/c3/740bc3d380555565276043695b34b4e8.jpg">
+<img src="https://i.pinimg.com/1200x/93/9e/78/939e782cbed5fada73a2b386a9f6b059.jpg">
+<img src="https://i.pinimg.com/736x/55/34/ca/5534cae1eac3aecb081247da9d9be507.jpg">
+<img src="https://i.pinimg.com/1200x/62/93/c8/6293c8c4060b40235a97fb37aebdf8c2.jpg">
+<img src="https://i.pinimg.com/1200x/b9/8b/6a/b98b6a8d8c537d0c5782fd28d0b7ed64.jpg">
+<img src="https://i.pinimg.com/736x/94/d2/5f/94d25f091a8fd11ab557d02d4ac03979.jpg">
+
+
+
+<img src="https://i.pinimg.com/736x/74/0b/c3/740bc3d380555565276043695b34b4e8.jpg">
+<img src="https://i.pinimg.com/1200x/93/9e/78/939e782cbed5fada73a2b386a9f6b059.jpg">
+<img src="https://i.pinimg.com/736x/55/34/ca/5534cae1eac3aecb081247da9d9be507.jpg">
+<img src="https://i.pinimg.com/1200x/62/93/c8/6293c8c4060b40235a97fb37aebdf8c2.jpg">
+<img src="https://i.pinimg.com/1200x/b9/8b/6a/b98b6a8d8c537d0c5782fd28d0b7ed64.jpg">
+<img src="https://i.pinimg.com/736x/94/d2/5f/94d25f091a8fd11ab557d02d4ac03979.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="bg-black text-white py-16">
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-4 grid-cols-2 gap-10 px-6">
+
+<!-- Brand -->
+<div>
+<h3 class="text-xl font-semibold mb-4">UrbanMode</h3>
+<p class="text-gray-400 text-sm hover:text-red-400 active:text-red-600">
+Modern fashion designed for everyday confidence and style.
+</p>
+</div>
+
+<!-- Shop -->
+<div>
+<h4 class="font-semibold mb-4">Shop</h4>
+<ul class="space-y-2 text-gray-400 text-sm hover:text-red-400 active:text-red-600">
+<li><a href="#" class="hover:text-white">Men</a></li>
+<li><a href="#" class="hover:text-white">Women</a></li>
+<li><a href="#" class="hover:text-white">Accessories</a></li>
+<li><a href="#" class="hover:text-white">New Arrivals</a></li>
+</ul>
+</div>
+
+<!-- Customer Care -->
+<div>
+<h4 class="font-semibold mb-4">Customer Care</h4>
+<ul class="space-y-2 text-gray-400 text-sm hover:text-red-400 active:text-red-600">
+<li><a href="#" class="hover:text-white">Contact Us</a></li>
+<li><a href="#" class="hover:text-white">Shipping & Returns</a></li>
+<li><a href="#" class="hover:text-white">FAQ</a></li>
+<li><a href="#" class="hover:text-white">Track Order</a></li>
+</ul>
+</div>
+
+<!-- Social -->
+<div>
+<h4 class="font-semibold mb-4">Follow Us</h4>
+<ul class="space-y-2 text-gray-400 text-sm hover:text-red-400 active:text-red-600">
+<li><a href="#" class="hover:text-white">Instagram</a></li>
+<li><a href="#" class="hover:text-white">Facebook</a></li>
+<li><a href="#" class="hover:text-white">Twitter</a></li>
+<li><a href="#" class="hover:text-white">Pinterest</a></li>
+</ul>
+</div>
+
+</div>
+
+<!--copyright -->
+
+<div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
+&copy;2026 UrbanMode. All rights reserved.
+</div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 2000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+</body>
+</html>
